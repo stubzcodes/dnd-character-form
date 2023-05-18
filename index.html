@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Form Practice for Thinkful</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <main>
+            <form>
+            <fieldset>
+                <legend>Dnd Character Mini-Profile</legend>
+                <div>
+                    <label for="name">Player Name</label>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name here"
+                    />
+                </div>
+                <div>
+                    <label for="email">E-mail Address</label>
+                    <input
+                        id="email"
+                        type="text"
+                        name="email"
+                        placeholder="Enter your e-mail address here"
+                    />
+                </div>
+                <div>
+                    <label for="character-name">Character Name</label>
+                    <input
+                        id="character-name"
+                        type="text"
+                        name="character-name"
+                        placeholder="Enter your character's name here"
+                    />    
+                </div>
+                <div>
+                <label for="character-race">Character Race</label>
+                <select name="races" id="character-race" size="1">
+                    <option value="Dwarf">Dwarf</option>
+                    <option value="Elf">Elf</option>
+                    <option value="Halfling">Halfling</option>
+                    <option value="Human">Human</option>
+                    <option value="Dragonborn">Dragonborn</option>
+                    <option value="Gnome">Gnome</option>
+                    <option value="Half-Elf">Half-Elf</option>
+                    <option value="Half-Orc">Half-Orc</option>
+                </select>
+                </div> 
+                <div>
+                <label for="character-class">Character Class</label>
+                <select name="classes" id="character-class" size="1">
+                    <option value="Barbarian">Barbarian</option>
+                    <option value="Bard">Bard</option>
+                    <option value="Cleric">Cleric</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Fighter">Fighter</option>
+                    <option value="Monk">Monk</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Ranger">Ranger</option>
+                    <option value="Rogue">Rogue</option>
+                    <option value="Sorcerer">Sorcerer</option>
+                    <option value="Warlock">Warlock</option>
+                    <option value="Wizard">Wizard</option>
+                </select>    
+                </div>
+                <div>
+                    <label for="backstory">Character's Backstory</label>
+                    <textarea
+                        id="backstory"
+                        name="characters-backstory"
+                        maxlength="500"
+                        placeholder="Briefly explain where your character came from."
+                    ></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <button  type="reset">Reset</button>
+            </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
